@@ -1,0 +1,81 @@
+Last login: Fri Mar 14 10:36:54 on ttys009
+nero@neros-macaroni-20 ~ % python3
+Python 3.13.0 (v3.13.0:60403a5409f, Oct  7 2024, 00:37:40) [Clang 15.0.0 (clang-1500.3.9.4)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> class Complex:
+...     pass
+...     
+>>> one = Complex()
+>>> id(one)
+4373434384
+>>> i = Complex()
+>>> id(i)
+4372704272
+>>> one.real = 1.0
+>>> one.imag = 0.0
+>>> print(one)
+<__main__.Complex object at 0x104ad5010>
+>>> class Complex:
+...     def __str__(self):
+...         return '({:.0f}
+...         
+  File "<python-input-8>", line 3
+    return '({:.0f}
+           ^
+SyntaxError: unterminated string literal (detected at line 3)
+>>> print(one)
+<__main__.Complex object at 0x104ad5010>
+>>> class Complex:
+...     def __str__(self):
+...         return '({:.0f}{:+.0f}i)'.format(self-real, self.imag)
+...         
+>>> print(one)
+<__main__.Complex object at 0x104ad5010>
+>>> one = Complex()
+>>> one.real = 1.0
+>>> one.imag = 0.0
+>>> print(one)
+Traceback (most recent call last):
+  File "<python-input-15>", line 1, in <module>
+    print(one)
+    ~~~~~^^^^^
+  File "<python-input-10>", line 3, in __str__
+    return '({:.0f}{:+.0f}i)'.format(self-real, self.imag)
+                                          ^^^^
+NameError: name 'real' is not defined. Did you mean: 'self.real'?
+>>> class Complex:
+...     def __str__(self):
+...         return '({:.0f}{:+.0f}i)'.format(self.real, self.imag)
+...         
+>>> print(one)
+Traceback (most recent call last):
+  File "<python-input-17>", line 1, in <module>
+    print(one)
+    ~~~~~^^^^^
+  File "<python-input-10>", line 3, in __str__
+    return '({:.0f}{:+.0f}i)'.format(self-real, self.imag)
+                                          ^^^^
+NameError: name 'real' is not defined. Did you mean: 'self.real'?
+>>> class Complex:
+...     def __str__(self):
+...         return '({:.0f}{:+.0f}i)'.format(self.real, self.imag)
+...         
+>>> one = Complex()
+>>> one.real = 10.0
+>>> one.imag = 0.0
+>>> print(one)
+(10+0i)
+>>> str(one)
+'(10+0i)'
+>>> quir
+Traceback (most recent call last):
+  File "<python-input-24>", line 1, in <module>
+    quir
+NameError: name 'quir' is not defined. Did you mean: 'quit'?
+>>> quir
+Traceback (most recent call last):
+  File "<python-input-25>", line 1, in <module>
+    quir
+NameError: name 'quir' is not defined. Did you mean: 'quit'?
+>>> quit
+nero@neros-macaroni-20 ~ % 

@@ -1,0 +1,89 @@
+Last login: Tue Apr  1 22:00:59 on ttys000
+nero@neros-macaroni-20 ~ % python
+zsh: command not found: python
+nero@neros-macaroni-20 ~ % python3
+Python 3.13.0 (v3.13.0:60403a5409f, Oct  7 2024, 00:37:40) [Clang 15.0.0 (clang-1500.3.9.4)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> set('hello')
+{'o', 'h', 'e', 'l'}
+>>> a = {1,2,3}
+>>> a.add(5)
+>>> print(a)
+{1, 2, 3, 5}
+>>> a.remove(6)
+Traceback (most recent call last):
+  File "<python-input-4>", line 1, in <module>
+    a.remove(6)
+    ~~~~~~~~^^^
+KeyError: 6
+>>> a.remove(5)
+>>> printr(w)
+Traceback (most recent call last):
+  File "<python-input-6>", line 1, in <module>
+    printr(w)
+    ^^^^^^
+NameError: name 'printr' is not defined. Did you mean: 'print'?
+>>> primy(s)
+Traceback (most recent call last):
+  File "<python-input-7>", line 1, in <module>
+    primy(s)
+    ^^^^^
+NameError: name 'primy' is not defined. Did you mean: 'print'?
+>>> print/9a.remove(5))
+  File "<python-input-8>", line 1
+    print/9a.remove(5))
+          ^
+SyntaxError: invalid decimal literal
+>>> print.remove(5))
+  File "<python-input-9>", line 1
+    print.remove(5))
+                   ^
+SyntaxError: unmatched ')'
+>>> print(a.remove(5))
+Traceback (most recent call last):
+  File "<python-input-10>", line 1, in <module>
+    print(a.remove(5))
+          ~~~~~~~~^^^
+KeyError: 5
+>>> a.remove(5)
+Traceback (most recent call last):
+  File "<python-input-11>", line 1, in <module>
+    a.remove(5)
+    ~~~~~~~~^^^
+KeyError: 5
+>>> t = ('Alice', 20, 3.9)
+>>> name, age, gpa = t
+>>> print(t.name)
+Traceback (most recent call last):
+  File "<python-input-14>", line 1, in <module>
+    print(t.name)
+          ^^^^^^
+AttributeError: 'tuple' object has no attribute 'name'
+>>> t[2]
+3.9
+>>> a = ('nero', 21, 4.0)
+>>> a[1]
+21
+>>> name
+'Alice'
+>>> name, age, gpa = a
+>>> name
+'nero'
+>>> a.name
+Traceback (most recent call last):
+  File "<python-input-21>", line 1, in <module>
+    a.name
+AttributeError: 'tuple' object has no attribute 'name'
+>>> teacher = ('j', (50, 'math'), 4)
+... print(teacher[0])
+... 
+... 
+j
+>>> teacher[2]
+4
+>>> teacher[1][0]
+50
+>>> teacher[1][1]
+'math'
+>>> 
+nero@neros-macaroni-20 ~ % 
